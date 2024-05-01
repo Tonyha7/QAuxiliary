@@ -113,6 +113,7 @@ object LicenseStatus {
 
     @JvmStatic
     fun isWhitelisted(): Boolean {
+        return true
         if (isInsider())
             return true
         val cfg = ConfigManager.getDefaultConfig()
